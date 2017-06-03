@@ -75,7 +75,11 @@
     PA2 = 0x00;
     PA3 = 0x00; 
 
+<<<<<<< HEAD
     CAN_Open((CAN_T *)NU_MODBASE(obj->can), hz, CAN_NORMAL_MODE);
+=======
+    CAN_Open((CAN_T *)NU_MODBASE(obj->can), 500000, CAN_NORMAL_MODE);
+>>>>>>> latest
     
     can_filter(obj, 0, 0, CANStandard, 0);
  }

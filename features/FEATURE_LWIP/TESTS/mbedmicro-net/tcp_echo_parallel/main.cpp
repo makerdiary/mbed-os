@@ -86,8 +86,11 @@ public:
 
 int main() {
     GREENTEA_SETUP(60, "tcp_echo");
+<<<<<<< HEAD
 
     Echo echoers[MBED_CFG_TCP_CLIENT_ECHO_THREADS];
+=======
+>>>>>>> latest
 
     int err = net.connect();
     TEST_ASSERT_EQUAL(0, err);

@@ -390,8 +390,13 @@ class Config(object):
         search for a configuration file).
         """
         config_errors = []
+<<<<<<< HEAD:tools/config/__init__.py
         self.app_config_location = app_config
         if self.app_config_location is None:
+=======
+        app_config_location = app_config
+        if app_config_location is None:
+>>>>>>> latest:tools/config/__init__.py
             for directory in top_level_dirs or []:
                 full_path = os.path.join(directory, self.__mbed_app_config_name)
                 if os.path.isfile(full_path):
@@ -408,7 +413,11 @@ class Config(object):
             self.app_config_data = {}
             config_errors.append(
                 ConfigException("Could not parse mbed app configuration from %s"
+<<<<<<< HEAD:tools/config/__init__.py
                                 % self.app_config_location))
+=======
+                                % app_config_location))
+>>>>>>> latest:tools/config/__init__.py
 
         # Check the keys in the application configuration data
         unknown_keys = set(self.app_config_data.keys()) - \

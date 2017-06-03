@@ -237,10 +237,16 @@ void USBHostHub::portReset(uint8_t port)
     while(1) {
         status = getPortStatus(port);
         /*  disconnection since reset request */
+<<<<<<< HEAD
         if (!(status & PORT_CONNECTION)) {
             break;
         }
         if (status & (PORT_ENABLE | PORT_RESET)) {
+=======
+        if (!(status & PORT_CONNECTION))
+            break;
+        if (status & (PORT_ENABLE | PORT_RESET))
+>>>>>>> latest
             break;
         }
         if (status & PORT_OVER_CURRENT) {

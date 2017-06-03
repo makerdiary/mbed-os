@@ -127,6 +127,7 @@ int spi_master_write(spi_t *obj, int value)
     return rx_data & 0xffff;
 }
 
+<<<<<<< HEAD
 int spi_master_block_write(spi_t *obj, const char *tx_buffer, int tx_length, char *rx_buffer, int rx_length) {
     int total = (tx_length > rx_length) ? tx_length : rx_length;
 
@@ -141,6 +142,8 @@ int spi_master_block_write(spi_t *obj, const char *tx_buffer, int tx_length, cha
     return total;
 }
 
+=======
+>>>>>>> latest
 int spi_slave_receive(spi_t *obj)
 {
     return spi_readable(obj);

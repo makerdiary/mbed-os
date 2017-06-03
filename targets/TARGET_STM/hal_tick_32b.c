@@ -101,7 +101,11 @@ HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
 #if !TARGET_STM32L1
     TimMasterHandle.Init.RepetitionCounter = 0;
 #endif
+<<<<<<< HEAD
 #ifdef TIM_AUTORELOAD_PRELOAD_DISABLE
+=======
+#if TARGET_STM32F0||TARGET_STM32F7
+>>>>>>> latest
     TimMasterHandle.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
 #endif
     HAL_TIM_OC_Init(&TimMasterHandle);

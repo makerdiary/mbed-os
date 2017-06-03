@@ -57,6 +57,8 @@ public:
      *
      * @return
      *           BLE_ERROR_NONE if successful.
+     *
+     * @todo check whether remove this function (because it is never called)
      */
     virtual ble_error_t getAddressesFromBondTable(Gap::Whitelist_t &addresses) const {
         uint8_t i;
@@ -112,6 +114,7 @@ public:
 
         return BLE_ERROR_NONE;
     }
+<<<<<<< HEAD
 #else // -> NRF_SD_BLE_API_VERSION >= 3
     /**
      * @brief  Returns a list of addresses from peers in the stacks bond table.
@@ -132,6 +135,9 @@ public:
 
 
 
+=======
+#endif
+>>>>>>> latest
     /**
      * @brief  Clear nRF5xSecurityManager's state.
      *

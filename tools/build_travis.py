@@ -122,11 +122,18 @@ build_list = (
     { "target": "SAMD21J18A",  "toolchains": "GCC_ARM", "libs": ["dsp"] },
     { "target": "SAMD21G18A",  "toolchains": "GCC_ARM", "libs": ["dsp"] },
     { "target": "SAML21J18A",  "toolchains": "GCC_ARM", "libs": ["dsp"] },
+<<<<<<< HEAD
 
     { "target": "DISCO_L476VG",     "toolchains": "GCC_ARM", "libs": ["dsp", "usb"] },
     { "target": "DISCO_L072CZ_LRWAN1",     "toolchains": "GCC_ARM", "libs": ["dsp"] },
     { "target": "NUMAKER_PFM_NUC472",   "toolchains": "GCC_ARM",    "libs": ["dsp", "usb"] },
     { "target": "NUMAKER_PFM_M453",     "toolchains": "GCC_ARM",    "libs": ["dsp", "usb"] },
+=======
+    { "target": "DISCO_L476VG",     "toolchains": "GCC_ARM", "libs": ["dsp", "rtos", "usb"] },
+    { "target": "DISCO_L072CZ_LRWAN1",     "toolchains": "GCC_ARM", "libs": ["dsp", "rtos"] },
+    { "target": "NUMAKER_PFM_NUC472",   "toolchains": "GCC_ARM",    "libs": ["dsp", "rtos", "usb"] },
+    { "target": "NUMAKER_PFM_M453",     "toolchains": "GCC_ARM",    "libs": ["dsp", "rtos", "usb"] },
+>>>>>>> latest
  )
 
 ################################################################################
@@ -241,7 +248,12 @@ linking_list = [
     {"target": "DISCO_L072CZ_LRWAN1",
      "toolchains": "GCC_ARM",
      "tests": {""     : ["MBED_2", "MBED_10", "MBED_11", "MBED_16"],
+<<<<<<< HEAD
               }
+=======
+               "rtos" : ["RTOS_1", "RTOS_2", "RTOS_3"],
+             }
+>>>>>>> latest
     },
     {"target": "NUMAKER_PFM_NUC472",
      "toolchains": "GCC_ARM",

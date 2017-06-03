@@ -943,7 +943,11 @@
         "extra_labels": ["STM", "STM32F4", "STM32F439", "STM32F439ZI", "STM32F439xx", "STM32F439xI", "FLASH_CMSIS_ALGO"],
         "supported_toolchains": ["ARM", "uARM", "GCC_ARM", "IAR"],
         "progen": {"target": "nucleo-f439zi"},
+<<<<<<< HEAD
         "macros": ["TRANSACTION_QUEUE_SIZE_SPI=2", "MBEDTLS_CONFIG_HW_SUPPORT", "USB_STM_HAL", "USBHOST_OTHER"],
+=======
+        "macros": ["TRANSACTION_QUEUE_SIZE_SPI=2", "MBEDTLS_CONFIG_HW_SUPPORT"],
+>>>>>>> latest
         "device_has": ["ANALOGIN", "ANALOGOUT", "CAN", "ERROR_RED", "I2C", "I2CSLAVE", "I2C_ASYNCH", "INTERRUPTIN", "LOWPOWERTIMER", "PORTIN", "PORTINOUT", "PORTOUT", "PWMOUT", "RTC", "SERIAL", "SERIAL_FC", "SLEEP", "SPI", "SPISLAVE", "SPI_ASYNCH", "STDIO_MESSAGES", "TRNG", "FLASH"],
         "detect_code": ["0797"],
         "features": ["LWIP"],
@@ -2685,7 +2689,11 @@
     "MCU_NRF52": {
         "inherits": ["Target"],
         "core": "Cortex-M4F",
+<<<<<<< HEAD
         "macros": ["NRF52", "TARGET_NRF52832", "BLE_STACK_SUPPORT_REQD", "SOFTDEVICE_PRESENT", "S132", "CMSIS_VECTAB_VIRTUAL", "CMSIS_VECTAB_VIRTUAL_HEADER_FILE=\"cmsis_nvic.h\""],
+=======
+        "macros": ["NRF52", "TARGET_NRF52832", "BLE_STACK_SUPPORT_REQD", "SOFTDEVICE_PRESENT", "S132"],
+>>>>>>> latest
         "extra_labels": ["NORDIC", "MCU_NRF52", "MCU_NRF52832", "NRF5", "SDK11", "NRF52_COMMON"],
         "OUTPUT_EXT": "hex",
         "is_disk_virtual": true,
@@ -2773,7 +2781,11 @@
     "MCU_NRF52840": {
         "inherits": ["Target"],
         "core": "Cortex-M4F",
+<<<<<<< HEAD
         "macros": ["TARGET_NRF52840", "BLE_STACK_SUPPORT_REQD", "SOFTDEVICE_PRESENT", "S140", "NRF_SD_BLE_API_VERSION=5", "NRF52840_XXAA", "NRF_DFU_SETTINGS_VERSION=1", "NRF_SD_BLE_API_VERSION=5", "CMSIS_VECTAB_VIRTUAL", "CMSIS_VECTAB_VIRTUAL_HEADER_FILE=\"cmsis_nvic.h\""],
+=======
+        "macros": ["TARGET_NRF52840", "BLE_STACK_SUPPORT_REQD", "SOFTDEVICE_PRESENT", "S140", "NRF_SD_BLE_API_VERSION=5", "NRF52840_XXAA", "NRF_DFU_SETTINGS_VERSION=1", "NRF_SD_BLE_API_VERSION=5"],
+>>>>>>> latest
         "extra_labels": ["NORDIC", "MCU_NRF52840", "NRF5", "SDK13", "NRF52_COMMON"],
         "OUTPUT_EXT": "hex",
         "is_disk_virtual": true,
@@ -2812,7 +2824,11 @@
         "supported_form_factors": ["ARDUINO"],
         "inherits": ["MCU_NRF52840"],
         "macros_add": ["BOARD_PCA10056", "CONFIG_GPIO_AS_PINRESET", "SWI_DISABLE0", "NRF52_ERRATA_20"],
+<<<<<<< HEAD
         "device_has": ["FLASH", "ANALOGIN", "ERROR_PATTERN", "I2C", "I2C_ASYNCH", "INTERRUPTIN", "LOWPOWERTIMER", "PORTIN", "PORTINOUT", "PORTOUT", "PWMOUT", "RTC", "SERIAL", "SERIAL_ASYNCH", "SERIAL_FC", "SLEEP", "SPI", "SPI_ASYNCH", "SPISLAVE"],
+=======
+        "device_has": ["ANALOGIN", "ERROR_PATTERN", "I2C", "I2C_ASYNCH", "INTERRUPTIN", "LOWPOWERTIMER", "PORTIN", "PORTINOUT", "PORTOUT", "PWMOUT", "RTC", "SERIAL", "SERIAL_ASYNCH", "SERIAL_FC", "SLEEP", "SPI", "SPI_ASYNCH", "SPISLAVE"],
+>>>>>>> latest
         "release_versions": ["2", "5"],
         "device_name": "nRF52840_xxAA"
     },
@@ -2835,7 +2851,11 @@
         "features": ["LWIP"],
         "release_versions": ["5"],
         "device_name": "NUC472HI8AE",
+<<<<<<< HEAD
         "bootloader_supported": true
+=======
+        "bootloader_supported": true    
+>>>>>>> latest
     },
     "NCS36510": {
         "inherits": ["Target"],
@@ -2884,7 +2904,11 @@
         "device_has": ["ANALOGIN", "I2C", "I2CSLAVE", "I2C_ASYNCH", "INTERRUPTIN", "LOWPOWERTIMER", "PORTIN", "PORTINOUT", "PORTOUT", "PWMOUT", "RTC", "SERIAL", "SERIAL_ASYNCH", "SERIAL_FC", "STDIO_MESSAGES", "SLEEP", "SPI", "SPISLAVE", "SPI_ASYNCH", "CAN", "FLASH"],
         "release_versions": ["2", "5"],
         "device_name": "M453VG6AE",
+<<<<<<< HEAD
         "bootloader_supported": true
+=======
+        "bootloader_supported": true    
+>>>>>>> latest
     },
     "HI2110": {
         "inherits": ["Target"],

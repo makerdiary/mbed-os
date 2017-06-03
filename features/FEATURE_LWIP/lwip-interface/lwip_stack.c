@@ -423,6 +423,7 @@ static void mbed_lwip_core_init(void)
 {
 
     // Check if we've already brought up lwip
+<<<<<<< HEAD
     if (!lwip_inited) {
 	// Seed lwip random
         lwip_seed_random();
@@ -434,6 +435,10 @@ static void mbed_lwip_core_init(void)
         }
         lwip_init_tcp_isn(0, (u8_t *) &tcp_isn_secret);
 
+=======
+    if (!mbed_lwip_get_mac_address()) {
+        // Set up network
+>>>>>>> latest
         sys_sem_new(&lwip_tcpip_inited, 0);
         sys_sem_new(&lwip_netif_linked, 0);
         sys_sem_new(&lwip_netif_unlinked, 0);
@@ -457,9 +462,18 @@ nsapi_error_t mbed_lwip_emac_init(emac_interface_t *emac)
 #if LWIP_IPV4
                    0, 0, 0,
 #endif
+<<<<<<< HEAD
                    emac, MBED_NETIF_INIT_FN, tcpip_input)) {
         return NSAPI_ERROR_DEVICE_ERROR;
     }
+=======
+                emac, MBED_NETIF_INIT_FN, tcpip_input)) {
+            return NSAPI_ERROR_DEVICE_ERROR;
+        }
+
+        mbed_lwip_set_mac_address();
+        netif_set_default(&lwip_netif);
+>>>>>>> latest
 
     // Note the MAC address actually in use
     mbed_lwip_record_mac_address(&lwip_netif);

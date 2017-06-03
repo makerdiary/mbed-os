@@ -2,13 +2,22 @@
   ******************************************************************************
   * @file    system_stm32f4xx.h
   * @author  MCD Application Team
+<<<<<<< HEAD
   * @version V2.6.1
   * @date    14-February-2017
+=======
+  * @version V2.5.0
+  * @date    22-April-2016
+>>>>>>> latest
   * @brief   CMSIS Cortex-M4 Device System Source File for STM32F4xx devices.       
   ******************************************************************************  
   * @attention
   *
+<<<<<<< HEAD
   * <h2><center>&copy; COPYRIGHT(c) 2017 STMicroelectronics</center></h2>
+=======
+  * <h2><center>&copy; COPYRIGHT(c) 2015 STMicroelectronics</center></h2>
+>>>>>>> latest
   *
   * Redistribution and use in source and binary forms, with or without modification,
   * are permitted provided that the following conditions are met:
@@ -75,8 +84,11 @@
   */
 extern uint32_t SystemCoreClock;          /*!< System Clock Frequency (Core Clock) */
 
+<<<<<<< HEAD
 extern const uint8_t  AHBPrescTable[16];    /*!< AHB prescalers table values */
 extern const uint8_t  APBPrescTable[8];     /*!< APB prescalers table values */
+=======
+>>>>>>> latest
 
 /**
   * @}

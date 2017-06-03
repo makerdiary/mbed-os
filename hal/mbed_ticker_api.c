@@ -217,8 +217,11 @@ void ticker_insert_event_us(const ticker_data_t *const ticker, ticker_event_t *o
     } else {
         prev->next = obj;
     }
+<<<<<<< HEAD
 
     schedule_interrupt(ticker);
+=======
+>>>>>>> latest
 
     core_util_critical_section_exit();
 }

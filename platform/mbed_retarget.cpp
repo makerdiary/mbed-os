@@ -121,6 +121,7 @@ static void init_serial() {
 #endif
 }
 
+<<<<<<< HEAD
 /**
  * Sets errno when file opening fails.
  * Wipes out the filehandle too.
@@ -135,6 +136,8 @@ static int handle_open_errors(int error, unsigned filehandle_idx) {
     return -1;
 }
 
+=======
+>>>>>>> latest
 #if MBED_CONF_FILESYSTEM_PRESENT
 static inline int openmode_to_posix(int openmode) {
     int posix = openmode;
