@@ -87,7 +87,7 @@ typedef enum {
     p31 = 31,
 
     // Not connected
-    NC = (int)0xFFFFFFFF
+    NC = (int)0xFFFFFFFF,
 
     P0_0  = p0,
     P0_1  = p1,
@@ -134,7 +134,7 @@ typedef enum {
 
     // mBed interface Pins
     USBTX = TX_PIN_NUMBER,
-    USBRX = RX_PIN_NUMBER,
+    USBRX = RX_PIN_NUMBER
 
 } PinName;
 
