@@ -128,6 +128,7 @@ typedef enum {
     LED1    = p22,
     LED2    = p23,
     LED3    = p24,
+    LED4    = NC,
 
     RX_PIN_NUMBER  = p19,
     TX_PIN_NUMBER  = p20,
