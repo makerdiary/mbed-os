@@ -3911,6 +3911,12 @@
         "release_versions": ["5"],
         "device_name": "nRF52832_xxAA"
     },
+    "NRF52832_MDK": {
+        "inherits": ["MCU_NRF52832"],
+        "release_versions": ["5"],
+        "detect_code": ["1024"],
+        "device_name": "nRF52832_xxAA"
+    },
     "SDT52832B": {
         "inherits": ["MCU_NRF52832"],
         "release_versions": ["5"],
@@ -4016,6 +4022,12 @@
         "inherits": ["MCU_NRF52840"],
         "release_versions": ["5"],
         "device_name": "nRF52840_xxAA"
+    },
+    "NRF52840_MDK": {
+        "inherits": ["MCU_NRF52840"],
+        "release_versions": ["5"],
+        "device_name": "nRF52840_xxAA",
+        "detect_code": ["1026"]
     },
     "MTB_LAIRD_BL654": {
         "inherits": ["MCU_NRF52840"],
